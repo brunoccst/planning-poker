@@ -1,0 +1,49 @@
+$card-default-height: 8.9cm;
+$card-default-width: 6.4cm;
+
+$background-color: #4b4040;
+
+.card {
+    width: calc($card-default-width * 0.5);
+    height: calc($card-default-height * 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: $background-color;
+    display: flex;
+
+    .rounded-value {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+        border-radius: 20px;
+    }
+
+    .upper-value {
+        position: absolute;
+        color: white;
+    }
+
+    &-outer {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-inner {
+        align-self: center;
+        width: 100px;
+        height: 150px;
+        background-color: white;
+        display: flex;
+
+        .middle-value {
+            align-self: center;
+            text-align: center;
+            font-size: 50px;
+            flex-grow: 1;
+        }
+    }
+}
