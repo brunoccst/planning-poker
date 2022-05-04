@@ -1,0 +1,19 @@
+{
+  "name": "planning-poker",
+  "version": "1.0.0",
+  "description": "A planning poker solution based on React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoccst/planning-poker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoccst/planning-poker/issues"
+  },
+  "homepage": "https://github.com/brunoccst/planning-poker#readme"
+}
