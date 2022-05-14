@@ -1,13 +1,15 @@
 import './App.scss';
-import Card from './Components/Card/Card';
+import { Routes, Route, Link } from "react-router-dom";
+import CreateRoom from './Components/CreateRoom/CreateRoom';
+import JoinRoom from './Components/JoinRoom/JoinRoom';
 
 function App() {
-  const values = [0, 1, 2, 3, 5, 8, 13, 20, "?", "∞", "☕"];
   return (
     <div className="App">
-      <div className="table">
-        {values.map(value => <Card value={value}></Card>)}
-      </div>
+      <Routes>
+        <Route path="/" element={<CreateRoom />} />
+        <Route path="/JoinRoom/:roomName/:userName" element={<JoinRoom />} />
+      </Routes>
     </div>
   );
 }
