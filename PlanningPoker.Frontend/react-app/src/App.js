@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CreateRoom />} />
         <Route path="/JoinRoom/:roomName/:userName" element={<JoinRoom />} />
-        <Route path="/PokerRoom" element={<PokerRoom />} />
+        <Route path="/PokerRoom/:roomName/:userName/:isScrumMaster" element={<PokerRoom />} />
       </Routes>
     </div>
   );
